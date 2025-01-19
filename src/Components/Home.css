@@ -1,0 +1,212 @@
+/* General Reset and Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.title {
+  padding: 40px; /* Padding for spacing inside the title */
+  font-size: 3rem;
+  font-family: Arial, sans-serif;
+  color: #000; /* Text color */
+  background-color: rgb(244, 169, 181); /* Background color */
+  border-radius: 30px; /* Rounded corners */
+  text-align: center;
+  font-weight: bolder;
+  width: 100vw; /* Full viewport width */
+  display: block; /* Ensures block-level behavior */
+  box-sizing: border-box; /* Includes padding in the width calculation */
+}
+
+
+p {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 0.5rem 0 2rem;
+  color: #555;
+  font-weight: 600;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping for responsiveness */
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(244, 169, 181);
+  padding: 2rem;
+  color: #fff;
+  border-radius: 30px;
+}
+
+.search-container {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.search-input {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex: 0.5;
+  min-width: 200px;
+}
+
+.search-button {
+  padding: 0.75rem;
+  background-color: #85e085;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Genre & Emotion Containers */
+.genre-container, .emotion-container {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.genre-container h2, .emotion-container h2 {
+  font-size: 1.5rem;
+  color: #4a90e2;
+  margin-bottom: 2rem;
+}
+
+.genre-button, .emotion-button {
+  padding: 0.75rem;
+  width: 150px;
+  text-overflow: ellipsis;
+  overflow:inherit;
+  white-space: nowrap;
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 1rem auto;
+  font-size: 1rem;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+  
+}
+.sad:hover {
+  background-color: red !important;
+}
+
+.sad:active{
+  background-color: red;
+}
+
+.happy:hover {
+  background-color: #FFD700 !important;
+}
+
+.happy:active{
+  background-color: #FFD700;
+}
+
+.motivated:hover {
+  background-color:#FF8C00 !important;
+}
+
+.motivated:active{
+  background-color:#FF8C00;
+}
+
+.anxiety:hover {background-color: #B19CD9;}
+.anxiety:active {background-color: #B19CD9;}
+
+.inspire:hover{
+  background-color: #6A5ACD;
+}
+
+.inspire:active{
+  background-color: #6A5ACD;
+}
+
+.adventure:hover{
+  background-color: #E64A19;
+}
+
+.mystery:hover {
+  background-color: #B0BEC5;
+}
+.romance:hover{
+  background-color: #F48FB1;
+}
+
+.thriller:hover{
+  background-color: #D32F2F;
+}
+
+.science-fiction:hover{
+  background-color: #29B6F6;
+}
+
+.fantasy:hover{
+  background-color: #7E57C2;
+}
+
+.genre-button:hover, .emotion-button:hover {
+  transform: translateY(-3px) scale(0.98);
+  font-weight: bold;
+  color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .navbar-title {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .search-container {
+    width: 100%;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .search-input {
+    flex: none;
+    width: 100%;
+  }
+
+  .search-button {
+    font-size: 1rem;
+  }
+
+  .genre-button, .emotion-button {
+    width: 100%;
+    max-width: 200px;
+  }
+}
